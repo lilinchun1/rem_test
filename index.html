@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>rem</title>
+<link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+    <header class="header">
+        <h1>Anglebaby 微代小店</h1>
+        <div class="icon-message">
+            &#xe623
+            <span>12</span>
+        </div>
+        <div class="icon-tool">
+            &#xe622
+            <span>12</span>
+        </div>
+        <div class="header-pic">
+            <img src="img/main-header.jpg" alt=""/>
+            <div class="leve-logo"><img src="img/vip1-1.png" alt=""/></div>
+        </div>
+    </header>
+    <ul class="performance">
+        <li>
+            <b>5,645.00</b>
+            <p>我的业绩</p>
+        </li>
+        <li>
+            <b>5,645.00</b>
+            <p>团队业绩</p>
+        </li>
+        <li>
+            <b>5,645.00</b>
+            <p>我的收入</p>
+        </li>
+    </ul>
+    <section class="function-item-wrap">
+        <div class="function-item">
+            <div class="function-item-pic icon-shop">
+                &#xe61f
+            </div>
+            <h2 class="function-item-tt">
+                我的店铺
+            </h2>
+        </div>
+        <div class="function-item">
+            <div class="function-item-pic icon-shop">
+                &#xe600
+            </div>
+            <h2 class="function-item-tt">
+                订单管理
+            </h2>
+        </div>
+        <div class="function-item">
+            <div class="function-item-pic icon-shop">
+                &#xe61d
+            </div>
+            <h2 class="function-item-tt">
+                我的收入
+            </h2>
+        </div>
+        <div class="function-item">
+            <div class="function-item-pic icon-shop">
+                &#xe606
+            </div>
+            <h2 class="function-item-tt">
+                我的团队
+            </h2>
+        </div>
+        <div class="function-item">
+            <div class="function-item-pic icon-shop">
+                &#xe620
+            </div>
+            <h2 class="function-item-tt">
+                新手宝典
+            </h2>
+        </div>
+        <div class="function-item">
+            <div class="function-item-pic icon-shop">
+                &#xe61a
+            </div>
+            <h2 class="function-item-tt">
+                销售管理
+            </h2>
+        </div>
+    </section>
+    <footer class="footer">
+        易享科技出品
+    </footer>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>
